@@ -1,0 +1,41 @@
+:root {
+    --username-1: "Akash B";
+    --bio-1: "Building Cursed CSS backends";
+    --color-1: #00b7ff;
+
+    --username-2: "Second User";
+    --bio-2: "Using Cursed CSS backends";
+    --color-2: #0066ff;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee;
+}
+
+.profile {
+    padding: 2rem;
+    border-radius: 1rem;
+    color: whitesmoke;
+}
+
+/* State machine: user 1 selected */
+#user1:checked ~ .profile {
+    background: var(--color-1);
+}
+#user1:checked ~ .profile::before {
+    content:  "  " var(--username-1) " - " var(--bio-1);
+}
+
+
+/* State machine: user 2 selected */
+#user2:checked ~ .profile {
+    background: var(--color-2);
+}
+#user2:checked ~ .profile::before {
+    content:  "  " var(--username-2) " - " var(--bio-2);
+}
