@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="backend.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="title">
+        <!-- Global state: whose turn? -->
+        <input type="radio" name="turn" id="turn-x" checked hidden />
+        <input type="radio" name="turn" id="turn-o" hidden />
+
+        <div class="turn"></div>
+
+        <section class="board">
+          <div class="cell c1">
+            <input type="radio" name="c1" id="c1-x" hidden />
+            <input type="radio" name="c1" id="c1-o" hidden />
+
+            <label for="c1-x" class="tap tap-x"></label>
+            <label for="c1-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <div class="cell c2">
+            <input type="radio" name="c2" id="c2-x" hidden />
+            <input type="radio" name="c2" id="c2-o" hidden />
+            <label for="c2-x" class="tap tap-x"></label>
+            <label for="c2-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <div class="cell c3">
+            <input type="radio" name="c3" id="c3-x" hidden />
+            <input type="radio" name="c3" id="c3-o" hidden />
+            <label for="c3-x" class="tap tap-x"></label>
+            <label for="c3-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <div class="cell c4">
+            <input type="radio" name="c4" id="c4-x" hidden />
+            <input type="radio" name="c4" id="c4-o" hidden />
+            <label for="c4-x" class="tap tap-x"></label>
+            <label for="c4-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <div class="cell c5">
+            <input type="radio" name="c5" id="c5-x" hidden />
+            <input type="radio" name="c5" id="c5-o" hidden />
+            <label for="c5-x" class="tap tap-x"></label>
+            <label for="c5-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <div class="cell c6">
+            <input type="radio" name="c6" id="c6-x" hidden />
+            <input type="radio" name="c6" id="c6-o" hidden />
+            <label for="c6-x" class="tap tap-x"></label>
+            <label for="c6-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <div class="cell c7">
+            <input type="radio" name="c7" id="c7-x" hidden />
+            <input type="radio" name="c7" id="c7-o" hidden />
+            <label for="c7-x" class="tap tap-x"></label>
+            <label for="c7-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <div class="cell c8">
+            <input type="radio" name="c8" id="c8-x" hidden />
+            <input type="radio" name="c8" id="c8-o" hidden />
+            <label for="c8-x" class="tap tap-x"></label>
+            <label for="c8-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <div class="cell c9">
+            <input type="radio" name="c9" id="c9-x" hidden />
+            <input type="radio" name="c9" id="c9-o" hidden />
+            <label for="c9-x" class="tap tap-x"></label>
+            <label for="c9-o" class="tap tap-o"></label>
+            <span class="mark"></span>
+          </div>
+
+          <!-- visual piece -->
+          <!-- <span class="mark"></span> -->
+
+          <div class="overlay xwin"></div>
+          <div class="overlay owin"></div>
+          <div class="overlay draw"></div>
+        </section>
+
+        <div class="controls">
+          <label for="turn-x" class="btn">X Turn</label> &nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="turn-o" class="btn">O Turn</label>
+          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="btn" href="">Reset</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
